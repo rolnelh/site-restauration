@@ -1,0 +1,1161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.hamburger {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: none;
+}
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header h1 {
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+
+header button {
+    width: auto;
+    padding: 10px 15px;
+    border: none;
+    background-color: orange;
+    border-radius: 100px;
+    color: white;
+}
+
+.barner {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    margin-top: 4%;
+}
+
+.barner .content {
+    width: 45%;
+    height: 100%;
+    padding: 5% 8%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content h1 {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 42px;
+}
+
+.content p {
+    padding: 20px 0;
+    line-height: 30px;
+}
+
+.content span {
+    padding: 25px 0;
+    font-weight: 600;
+}
+
+.content button {
+    width: 150px;
+    padding: 10px 15px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 100px;
+}
+
+.barner .img {
+    width: 55%;
+    height: 100%;
+}
+
+.barner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.menu-section {
+    width: 100%;
+    height: 100%;
+    margin-top: 6%;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-section h1 {
+    padding: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.menus {
+    width: 100%;
+    height: 80px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+.menu :where(img) {
+    width: 50px;
+    height: 50px;
+}
+
+.menu :where(p) {
+    font-weight: 600;
+}
+
+.foods {
+    width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 6% auto;
+}
+
+.food {
+    width: 370px;
+    height: 100%;
+}
+
+.food :where(img) {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.food :where(.name, .price) {
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.food :where(.desc) {
+    padding: 10px;
+    line-height: 22px;
+}
+
+.stars {
+    padding: 5px 10px;
+}
+
+.about {
+    width: 1200px;
+    height: 85vh;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.about .left {
+    width: 600px;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+.about .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .right {
+    width: 600px;
+    height: 100%;
+    /* border: 1px solid black; */
+    padding: 6% 4%;
+}
+
+.right h1 {
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.right p {
+    padding: 8px 0;
+    line-height: 25px;
+}
+
+.right button {
+    width: auto;
+    margin: 10px 0;
+    padding: 12px 15px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 100px;
+}
+
+.right button span {
+    background-color: white;
+    color: orange;
+    border-radius: 100%;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    font-weight: bolder;
+}
+
+.chefs {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.chefs span {
+    font-size: 18px;
+    padding: 12px;
+}
+
+.chefs h1 {
+    font-size: 28px;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.chefs p {
+    line-height: 28px;
+}
+
+.container {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px auto 5px;
+}
+
+.chef {
+    width: 360px;
+    height: 440px;
+    /* border-radius: 10px; */
+    /* background-color: #f0f5f0; */
+    box-shadow: 0 0 2px #000;
+}
+
+.chef :where(img) {
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    object-fit: cover;
+    /* border-radius: 20px; */
+}
+
+.chef :where(p) {
+    font-weight: bold;
+}
+
+.chef:first-child {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.chef:nth-child(3) {
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.pizza {
+    width: 1200px;
+    height: 72vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 8% auto 4%;
+}
+
+.pizza .left {
+    width: 600px;
+    height: 100%;
+}
+
+.pizza .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pizza .right {
+    width: 600px;
+    height: 100%;
+    padding: 6% 4%;
+}
+
+.right h1 {
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.right p {
+    padding: 8px 0;
+    line-height: 28px;
+}
+
+.right button {
+    width: auto;
+    margin: 14px 0;
+    padding: 10px 15px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+
+.testimonial {
+    width: 1200px;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 8% auto 4%;
+}
+
+.testimonial .left {
+    width: 600px;
+    height: 100%;
+}
+
+.testimonial .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20% 45%;
+}
+
+.testimonial .right {
+    width: 600px;
+    height: 100%;
+    padding: 6% 4%;
+}
+
+.testimonial h1 {
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 30px;
+    color: orange;
+}
+
+.testimonial p {
+    padding: 8px 0;
+    line-height: 28px;
+}
+
+.testimonial span {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.hero {
+    width: 98%;
+    height: 480px;
+    margin: 20px auto;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+footer {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background-color: #f5f0f5;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 8% 0 0;
+}
+
+footer h1 {
+    padding: 16px;
+    font-size: 25px;
+}
+
+footer p {
+    padding: 5px;
+    line-height: 28px;
+}
+
+.media {
+    margin: 10px 0;
+}
+
+.media a {
+    margin: 5px;
+}
+
+.infos {
+    width: 1000px;
+    height: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3 *1fr);
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: auto;
+    border: none;
+    display: flex;
+}
+
+.info p {
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    color: black;
+}
+
+.info p a {
+    text-decoration: none;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    line-height: 30px;
+    color: #0a0a14;
+    margin-top: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.info:nth-child(3) {
+    margin-left: 40px;
+}
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    header {
+        justify-content: space-between;
+    }
+
+    header h1 {
+        margin-left: 20px;
+    }
+    .hamburger {
+        z-index: 10;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        margin-right: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hamburger::before {
+        position: absolute;
+        content: "";
+        width: 32px;
+        height: 5px;
+        border-radius: 6px;
+        box-shadow: 6px 10px black;
+        background-color: black;
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
+
+    .hamburger::after {
+        position: absolute;
+        content: "";
+        width: 32px;
+        height: 5px;
+        border-radius: 6px;
+        background-color: black;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+
+    .hamburger.active::before {
+        box-shadow: 0 0 black;
+        transform: rotate(135deg);
+    }
+
+    .hamburger.active::after {
+        transform: rotate(-135deg);
+    }
+
+    header {
+        width: 100%;
+        height: 70px;
+        padding: 15px;
+    }
+
+    ul {
+        top: 70px;
+        z-index: 99;
+        left: 0;
+        right: 0;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        display: block;
+        color: black;
+        background-color: white;
+        transform: translate(-100%);
+        transition: transform 1s ease;
+    }
+
+    ul li {
+        padding: 13px;
+        font-size: 18px;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    header ul.open {
+        transform: translate(0);
+    }
+    header button {
+        display: none;
+    }
+
+    .barner {
+        width: auto;
+        height: auto;
+        margin-top: 4%;
+    }
+
+    .barner .content {
+        width: 100%;
+        height: 100%;
+        padding: 10% 5%;
+        position: absolute;
+    }
+
+    .content h1 {
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 42px;
+    }
+
+    .barner .img {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .barner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+        z-index: -99;
+    }
+
+    .menu-section {
+        width: auto;
+        height: 100%;
+        margin-top: 10%;
+    }
+
+    .menus {
+        width: auto;
+        height: 100%;
+        gap: 30px;
+    }
+
+    .foods {
+        width: auto;
+        gap: 15px;
+        margin: 6% auto;
+    }
+
+    .about {
+        width: auto;
+        height: 100%;
+        margin: 30px auto;
+    }
+
+    .about .left {
+        width: 100%;
+        height: 100%;
+    }
+
+    .about .left img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .about .right {
+        width: auto;
+        height: 100%;
+        padding: 6% 4%;
+    }
+
+
+    .chefs {
+        width: auto;
+        height: 100%;
+        margin: 50px auto;
+    }
+
+    .chefs h1 {
+        font-size: 25px;
+        padding: 12px;
+    }
+
+    .chefs p {
+        line-height: 28px;
+        margin: 10px;
+    }
+
+    .container {
+        width: auto;
+        height: 100%;
+        margin: 40px auto 5px;
+    }
+
+    .pizza {
+        width: auto;
+        height: 100%;
+        margin: 8% auto 4%;
+    }
+
+    .pizza .left {
+        width: 100%;
+        height: 100%;
+    }
+
+    .pizza .right {
+        width: 100%;
+        height: 100%;
+        padding: 6% 4%;
+    }
+
+
+    .testimonial {
+        width: auto;
+        height: 100%;
+        margin: 8% auto 4%;
+    }
+
+    .testimonial .left {
+        width: 100%;
+        height: 100%;
+    }
+
+    .testimonial .left img {
+        width: 95%;
+        height: 100%;
+        margin: 10px;
+    }
+
+    .testimonial .right {
+        width: 100%;
+        height: 100%;
+        padding: 6% 4%;
+    }
+
+    footer {
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        background-color: #f5f0f5;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 8% 0 0;
+    }
+
+    footer h1 {
+        padding: 16px;
+        font-size: 25px;
+    }
+
+    footer p {
+        padding: 5px;
+        line-height: 28px;
+    }
+
+    .media {
+        margin: 10px 0;
+    }
+
+    .media a {
+        margin: 5px;
+    }
+
+    .infos {
+        width: 100%;
+        height: 100%;
+        margin: 15px auto;
+        gap: 20px;
+    }
+
+    .info {
+        width: 250px;
+        height: auto;
+        display: flex;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    header {
+        justify-content: space-between;
+    }
+
+    header h1 {
+        margin-left: 30px;
+    }
+
+    ul {
+        display: none;
+    }
+
+    header button {
+        display: none;
+    }
+
+    .barner {
+        width: auto;
+        height: auto;
+        margin-top: 4%;
+    }
+
+    .barner .content {
+        width: 100%;
+        height: 100%;
+        padding: 3% 4%;
+    }
+
+    .content h1 {
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 42px;
+    }
+
+    .barner .img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .barner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .menu-section {
+        width: auto;
+        height: 100%;
+        margin-top: 6%;
+    }
+
+    .menus {
+        width: auto;
+        height: 100%;
+        gap: 35px;
+    }
+
+    .foods {
+        width: auto;
+        gap: 15px;
+        margin: 4% auto;
+    }
+
+    .food {
+        width: 350px;
+        height: 100%;
+    }
+
+    .about {
+        width: auto;
+        height: 100%;
+        margin: 40px auto;
+    }
+
+    .about .left {
+        width: 50%;
+        height: 100%;
+    }
+
+    .about .left img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .about .right {
+        width: 50%;
+        height: 100%;
+        padding: 6% 2%;
+    }
+
+
+    .chefs {
+        width: auto;
+        height: 100%;
+        margin: 50px auto;
+    }
+
+    .chefs h1 {
+        font-size: 25px;
+        padding: 12px;
+    }
+
+    .chefs p {
+        line-height: 28px;
+        margin: 10px;
+    }
+
+    .container {
+        width: auto;
+        height: 100%;
+        margin: 40px 5px 5px;
+    }
+
+    .pizza {
+        width: auto;
+        height: 100%;
+        margin: 8% auto 4%;
+    }
+
+    .pizza .left {
+        width: 50%;
+        height: 100%;
+    }
+
+    .pizza .right {
+        width: 50%;
+        height: 100%;
+        padding: 6% 2%;
+    }
+
+
+    .testimonial {
+        width: auto;
+        height: 100%;
+        margin: 3% auto 4%;
+    }
+
+    .testimonial .left {
+        width: 50%;
+        height: 100%;
+    }
+
+    .testimonial .left img {
+        width: 95%;
+        height: 100%;
+        margin: 10px;
+    }
+
+    .testimonial .right {
+        width: 50%;
+        height: 100%;
+        padding: 6% 2%;
+    }
+    .testimonial h1 {
+        font-size: 25px;
+    }
+
+    footer {
+        width: auto;
+        height: 100%;
+        padding: 15px;
+        margin: 5% 0 0;
+    }
+
+    footer h1 {
+        padding: 16px;
+        font-size: 25px;
+    }
+
+    footer p {
+        padding: 5px;
+        line-height: 28px;
+    }
+
+    .media {
+        margin: 10px 0;
+    }
+
+    .media a {
+        margin: 5px;
+    }
+
+    .infos {
+        width: auto;
+        height: 100%;
+        margin: 25px auto;
+        gap: 20px;
+    }
+
+    .info {
+        width: 200px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px){
+    header {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    header h1 {
+        font-weight: bold;
+        /* font-size: 20px; */
+    }
+    
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    ul li a {
+        text-decoration: none;
+        color: black;
+        padding: 15px;
+    }
+    
+    header button {
+        width: auto;
+        padding: 10px 15px;
+        border: none;
+        background-color: orange;
+        border-radius: 100px;
+        color: white;
+    }
+    .barner {
+        width: auto;
+        height: auto;
+        margin-top: 2%;
+    }
+
+    .barner .content {
+        width: 100%;
+        height: 100%;
+        padding: 9% 6%;
+    }
+
+    .content h1 {
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 42px;
+    }
+
+    .barner .img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .barner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .menu-section {
+        width: auto;
+        height: 100%;
+        margin-top: 3%;
+    }
+
+    .menus {
+        width: auto;
+        height: 100%;
+        gap: 35px;
+    }
+
+    .foods {
+        width: auto;
+        gap: 15px;
+        margin: 4% auto;
+    }
+
+    .food {
+        width: 300px;
+        height: 100%;
+    }
+
+    .about {
+        width: auto;
+        height: 100%;
+        margin: 40px auto;
+    }
+
+    .about .left {
+        width: 50%;
+        height: 100%;
+    }
+
+    .about .left img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .about .right {
+        width: 50%;
+        height: 100%;
+        padding: 6% 2%;
+    }
+
+
+    .chefs {
+        width: auto;
+        height: 100%;
+        margin: 50px auto;
+    }
+
+    .chefs h1 {
+        font-size: 25px;
+        padding: 12px;
+    }
+    .chef {
+        width: 300px;
+        height: 440px;
+    }
+    .chefs p {
+        line-height: 28px;
+        margin: 10px;
+    }
+
+    .container {
+        width: auto;
+        height: 100%;
+        margin: 40px 5px 5px;
+    }
+
+    .pizza {
+        width: auto;
+        height: 100%;
+        margin: 8% auto 4%;
+    }
+
+    .pizza .left {
+        width: 50%;
+        height: 100%;
+    }
+
+    .pizza .right {
+        width: 50%;
+        height: 100%;
+        padding: 6% 2%;
+    }
+
+
+    .testimonial {
+        width: auto;
+        height: 100%;
+        margin: 3% auto 4%;
+    }
+
+    .testimonial .left {
+        width: 50%;
+        height: 100%;
+    }
+
+    .testimonial .left img {
+        width: 95%;
+        height: 100%;
+        margin: 10px;
+    }
+
+    .testimonial .right {
+        width: 50%;
+        height: 100%;
+        padding: 6% 2%;
+    }
+    .testimonial h1 {
+        font-size: 25px;
+    }
+
+    footer {
+        width: auto;
+        height: 100%;
+        padding: 15px;
+        margin: 5% 0 0;
+    }
+
+    footer h1 {
+        padding: 16px;
+        font-size: 25px;
+    }
+
+    footer p {
+        padding: 5px;
+        line-height: 28px;
+    }
+
+    .media {
+        margin: 10px 0;
+    }
+
+    .media a {
+        margin: 5px;
+    }
+
+    .infos {
+        width: auto;
+        height: 100%;
+        margin: 25px auto;
+        gap: 20px;
+    }
+
+    .info {
+        width: 200px;
+        height: auto;
+    }
+}
