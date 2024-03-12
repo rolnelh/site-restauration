@@ -806,7 +806,7 @@ footer p {
     .foods {
         width: auto;
         gap: 15px;
-        margin: 4% auto;
+        margin: 4% 10px;
     }
 
     .food {
