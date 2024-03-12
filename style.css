@@ -612,7 +612,7 @@ footer p {
     .foods {
         width: auto;
         gap: 15px;
-        margin: 6% auto;
+        margin: 6% 10px;
     }
 
     .about {
